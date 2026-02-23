@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What is Arduino? Complete Arduino Tutorial for Beginners with Parts, Uses and Projects</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin:0;
+            background:#f2f2f2;
+        }
+
+        /* Header (Google-like clean top) */
+        header{
+            background:white;
+            padding:20px;
+            text-align:center;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            color:#00979D;
+        }
+
+        .container{
+            width:85%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin:20px 0;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        img{
+            width:100%;
+            max-width:500px;
+            display:block;
+            margin:15px auto;
+            border-radius:10px;
+        }
+
+        h2{
+            color:#333;
+        }
+
+        ul{
+            line-height:1.8;
+        }
+
+        footer{
+            text-align:center;
+            padding:15px;
+            background:#00979D;
+            color:white;
+            margin-top:30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Arduino Complete Guide</h1>
+    <p>Learn Arduino Basics, Parts and Projects</p>
+</header>
+
+<div class="container">
+
+    <!-- What is Arduino -->
+    <div class="card">
+        <h2>What is Arduino?</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg">
+        <p>
+            Arduino is an open-source electronics platform used to build smart
+            electronic projects. It consists of a programmable microcontroller
+            board and software used to write and upload code.
+            Beginners use Arduino to create automation systems, robots,
+            sensors, and interactive devices.
+        </p>
+    </div>
+
+    <!-- Uses -->
+    <div class="card">
+        <h2>Uses of Arduino</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Arduino_Uno_-_R3.jpg">
+        <ul>
+            <li>Home automation systems</li>
+            <li>Robotics projects</li>
+            <li>Sound and light detection systems</li>
+            <li>Smart irrigation systems</li>
+            <li>Security alarms</li>
+            <li>IoT (Internet of Things) devices</li>
+        </ul>
+    </div>
+
+    <!-- Parts -->
+    <div class="card">
+        <h2>Main Parts of Arduino</h2>
+
+        <ul>
+            <b><h2> 1) Microcontroller:</h2> </b> The ATmega328P is a small but powerful 8-bit microcontroller made by Microchip Technology (earlier designed by Atmel). It’s basically a tiny computer on a single chip — meaning it has a processor, memory, and input/output pins all built together so it can control electronic devices.<br></br>
+ <li> <b> <h2>🧠 What is ATmega328P(Microcontroller) ? </h2> </b> </li>
+<li>It is a microcontroller IC used to read inputs (buttons, sensors, sound, light, etc.), process data using a program, and control outputs (LEDs, motors, displays).</li>
+
+<li>👉 Think of it as the brain of many beginner electronics projects.</li>
+
+It is most famous because it powers boards like the Arduino Uno. </li>
+            <img src="microcontroller(ATmega328P).png">
+<hr size = "3"></hr>
+            <b><h2>2) 🔌USB Port(Arduino):</h2></b> The USB port on an Arduino is a connector that allows the board to communicate with a computer and receive power. It works as a link between your laptop and the microcontroller so you can upload programs and control the board easily. It also converts USB signals from the computer into a form the microcontroller can understand.<br></br>
+<li> <b> <h2>🧠 What is the USB Port (Arduino)?</h2></b> </li>
+<li>It is a communication and power interface used to transfer code from a computer to the Arduino, send and receive data, and supply electrical power to the board.</li>
+
+<li>👉 Think of it as the gateway through which your computer gives instructions to the Arduino.</li>
+<li> <b> <h2>Main Uses of the USB Port: <h2> </b> </li> 
+<li>  Uploads programs from the Arduino IDE to the microcontroller.</li>
+<li>  Supplies 5V power to run the Arduino board.</li>
+<li> Enables serial communication for monitoring data and debugging.</li>
+<li> Provides an easy plug-and-play connection for beginners.</li>
+<img src="img2.png">
+<hr size = "3"></hr>
+            <b><h2>3) Digital Pins:</h2></b> The digital pins on an Arduino are connection points used to send or receive digital signals. These pins work with only two states — HIGH (ON / 5V) or LOW (OFF / 0V) — allowing the board to interact with electronic components like LEDs, buttons, buzzers, and relays. They help the microcontroller communicate with the outside world by controlling devices or reading simple input signals.<br></br>
+
+<li><h2>🧠 What are Digital Pins (Arduino)?<h2></li>
+<li>They are input/output pins that allow the Arduino to read digital data from components or send digital signals to control electronic devices.</li>
+
+<li>👉 Think of them as the switches and sensors’ communication lines connected to the Arduino’s brain.</li>
+
+<li><b><h2>Main Uses of Digital Pins:</h2> </b> </li>
+
+<li>💡 Turn components ON or OFF (LEDs, motors, buzzers).</li>
+
+<li>🔘 Read button or switch presses as input signals.</li>
+
+<li>⚙️ Control external modules using digital commands.</li>
+
+<li>⏱️ Some pins support PWM (Pulse Width Modulation) to simulate analog output.</li>
+<img src="img3.png">
+<hr size="3"></hr>
+            <b><h2>4) Analog Pins(Arduino): </h2></b> The analog pins on an Arduino are special input pins used to read varying electrical signals instead of just ON or OFF values. These pins can measure different voltage levels, allowing the board to understand real-world data from sensors like light sensors, temperature sensors, and potentiometers. They help the microcontroller read smooth, continuous changes from the environment.<br></br>
+
+<li><b><h2>🧠 What are Analog Pins (Arduino)?</h2></b></li>
+<li>They are input pins that read analog signals (a range of voltage values) and convert them into digital numbers so the microcontroller can process the data.</li>
+
+<li>👉 Think of them as the senses of the Arduino that detect how much or how little something changes.</li>
+
+<li><b><h2>Main Uses of Analog Pins:</h2></b></li>
+
+<li>🌡️ Read sensor values like temperature, light, and sound intensity.</li>
+
+<li>🎛️ Measure variable inputs from potentiometers or joysticks.</li>
+
+<li>📈 Convert voltage levels into numerical data using an internal ADC (Analog-to-Digital Converter).</li>
+
+<li>🔍 Useful for projects that require gradual or precise measurements. </li>
+<img src="img4.png">
+<hr size="3"></hr>
+            <b><h2>5) Power Pins(Arduino): </h2></b> The power pins on an Arduino are used to supply electrical power to the board and to connected electronic components. These pins allow the Arduino to distribute voltage to sensors, modules, and other devices so the entire circuit can work properly. They make it easy to power small electronic parts directly from the Arduino without needing a separate power source.<br></br>
+
+<li><b><h2>🧠 What are Power Pins (Arduino)?</h2></b></li>
+<li>They are dedicated pins that provide or manage electrical power for the Arduino board and external components connected to it.</li>
+
+<li>👉 Think of them as the energy supply lines that keep the Arduino and its components running.</li>
+
+<li><b><h2>Main Power Pins and Their Uses:</h2></b></li>
+
+<li>🔋 5V Pin: Provides regulated 5-volt output to power sensors and modules.</li>
+
+<li>⚡ 3.3V Pin: Supplies 3.3-volt power for low-voltage components.</li>
+
+<li>🌍 GND (Ground): Completes the circuit by providing a common ground connection.</li>
+<li>🔌 VIN Pin: Allows external power supply input when not using USB.</li>
+
+<li>🛡️ RESET Pin: Restarts the microcontroller when connected to ground momentarily.</li>
+<img src="img5.png">
+<hr size="3"> </hr>
+            <b><h2>6) Reset Button(Arduino):</h2></b> The reset button on an Arduino is a small push button used to restart the microcontroller. When pressed, it stops the current program and immediately starts running the program again from the beginning. This helps when you want to rerun your code or fix a program that is not working properly without unplugging the board.<br></br>
+
+<li><b><h2>🧠 What is the Reset Button (Arduino)?</h2></b></li>
+<li>It is a control button that resets the microcontroller, clearing the current execution and restarting the uploaded program.</li>
+
+<li>👉 Think of it as the restart button of a tiny computer.</li>
+
+<li><b><h2>Main Uses of the Reset Button:</h2></b></li>
+
+<li>🔁 Restarts the program from the beginning.</li>
+
+<li>🛠️ Helps during testing and debugging of projects.</li>
+
+<li>⬆️ Automatically used while uploading new code from the computer.</li>
+
+<li>⚡ Fixes temporary program freezes without disconnecting power.</li>
+<img src="img6.png">
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <div class="card">
+        <h2>Basic Arduino Projects</h2>
+        <ul>
+            <li><b><h2>Clap Switch Light</h2></b> — A clap switch light using an Arduino Uno is a simple automation project where a light turns ON or OFF when a clap sound is detected. A sound sensor (microphone module) listens for sudden sound vibrations, and the Arduino processes this signal using a programmed logic. When the clap sound crosses a certain threshold, the Arduino sends a signal to a relay or LED to change its state. This project is commonly used to demonstrate basic sound detection, input processing, and home-automation concepts in beginner electronics.</li>
+<img src="lightswitch.png">
+            <li><b><h2>Temperature Monitor</h2></b> — A temperature monitoring system using an Arduino Uno is a project that measures surrounding temperature using a temperature sensor such as LM35 or DHT11. The sensor continuously sends temperature data to the Arduino, which processes the values and displays them on a screen or Serial Monitor. It can also be programmed to trigger actions like turning on a fan or giving an alert when the temperature crosses a set limit. This project helps beginners understand sensor data reading and real-time environmental monitoring.</li>
+<img src="tempsensor.png">
+            <li><b><h2>Obstacle Avoiding Robot</h2></b> — An obstacle-avoiding robot using an Arduino Uno is an automated robot that can move on its own while detecting and avoiding objects in its path. It usually uses an ultrasonic sensor to measure the distance between the robot and nearby obstacles. The Arduino processes this distance data and controls motors through a motor driver to change direction whenever an object is detected. This project demonstrates basic robotics concepts like sensing, decision-making, and automatic movement without human control.</li>
+<img src="obstacle.png">
+            <li><b><h2>Automatic Plant Watering System</h2></b> — An automatic plant watering system using an Arduino Uno is a smart project that waters plants automatically based on soil moisture levels. A soil moisture sensor checks how dry or wet the soil is and sends this information to the Arduino. When the soil becomes too dry, the Arduino activates a water pump to supply water to the plant, and it stops once sufficient moisture is detected. This project helps save water, reduces manual effort, and demonstrates real-world automation using sensors and control systems.</li>
+<img src="watering2.png">
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>Created using HTML | Arduino Learning Website</p>
+</footer>
+
+</body>
+</html>
